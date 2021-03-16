@@ -60,7 +60,7 @@ def get_reply_markup(username):
     url = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
     buttons = [[
         InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-        InlineKeyboardButton('Share bot', url=url),
+        InlineKeyboardButton( "Join Channel", url="https://t.me/BM_Links", ),
     ]]
     return InlineKeyboardMarkup(buttons)
 
